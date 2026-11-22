@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+p{
+  font-family: "Nunito", sans-serif;
+  @apply text-[#74818F]
+}
+.p{
+   font-family: "Nunito", sans-serif;
+  @apply text-[#74818F]
+}
+.options{
+  border-bottom:1px solid  #ddd;
+  @apply py-[10px] px-[5px] cursor-pointer hover:text-brand-600
+}
+.navlink{
+  @apply hover:text-white hover:bg-brand-600 py-[20px]  px-[9px] lg:px-[15px] xl:px-[20px] duration-500 cursor-pointer
+}
+.mobnavlink{
+  @apply text-white hover:text-brand-600 hover:bg-white py-[15px] px-[20px] lg:px-[30px] duration-500 cursor-pointer
+}
+.btn{
+  @apply w-[100%] py-[10px] bg-brand-600 hover:border hover:border-brand-600 hover:bg-white hover:cursor-pointer  text-white hover:text-brand-600 duration-500 rounded-[3px] transition-all active:scale-95;
+}
+.btn2{
+  @apply w-[100%]   py-[10px] hover:border text-brand-600  bg-white hover:bg-brand-600 hover:cursor-pointer  hover:text-white  duration-500 rounded-[3px] transition-all active:scale-95 ;
+}
+.input{
+  @apply w-[100%] border my-[7px] text-[17px] px-[5px] py-[7px] !text-ink-600 rounded-[2px]
+}
+input,textarea{
+   @apply focus:outline-0  focus:ring-[2px] ring-brand-600
+}
+@tailwind utilities;
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.color{
+  color: #059669;
+}
+html,body{
+  width: 100vw;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+th:hover,td:hover{
+  @apply  cursor-pointer
+}
+
+
+.hero2{
+  background-image: url("./assets/heroedited.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hero3{
+  background-image: url("./assets/hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card {
+  @apply bg-white rounded-xl2 shadow-soft border border-ink-100 transition-all duration-300 hover:shadow-lg;
+}
+
+.skeleton {
+  @apply relative overflow-hidden bg-ink-100 rounded;
+  background-image: linear-gradient(90deg, rgba(241,245,249,0) 0, rgba(226,232,240,0.8) 50%, rgba(241,245,249,0) 100%);
+  background-size: 1000px 100%;
+  @apply animate-shimmer;
+}
